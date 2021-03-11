@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        'default': 'Poppins, Arial, Helvetica',
+        'default': 'Poppins, Arial, Helvetica', 
         'pDefault': 'Raleway, Arial, Helvetica'
       }
     }
