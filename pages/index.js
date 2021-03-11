@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={"flex w-full"}>
       <div className={"flex w-full bg-homepage-hero bg-cover bg-no-repeat bg-bottom"}>
-        <div className={"container flex flex-col"}>
+        <div className={"container flex mx-auto flex-col"}>
           <div className={"flex h-36 w-full"}></div>
           <h1 className="text-6xl font-default text-white">Marketing Automation</h1>
           <h1 className="text-6xl font-default text-white leading-tight">Solutions</h1>
