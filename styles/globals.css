@@ -2,11 +2,13 @@
   font-family: Poppins;
   font-weight: 400;
   src: url(/assets/fonts/Poppins.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: Raleway;
   font-weight: 400;
   src: url(/assets/fonts/Raleway.ttf);
+  font-display: swap;
 }
 html,
 body {
