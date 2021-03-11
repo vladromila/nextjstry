@@ -1,65 +1,32 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import Link from 'next/link'
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className={"flex w-full"}>
+      <div className={"flex w-full bg-homepage-hero bg-cover bg-no-repeat bg-bottom"}>
+        <div className={"container flex flex-col"}>
+          <div className={"flex h-36 w-full"}></div>
+          <h1 className="text-6xl font-default text-white">Marketing Automation</h1>
+          <h1 className="text-6xl font-default text-white leading-tight">Solutions</h1>
+          <div className={"flex h-14 w-full"}></div>
+          <p className="w-1/2 font-pDefault text-white text-xl">Leveraging our hands-on technical expertise, deep automation skills and engineering mindset, we assist the best B2B brands in the world on their journey to enhanced digitalization.</p>
+          <div className={"flex h-10 w-full"}></div>
+          <div className={"flex flex-row items-center"}>
+            <Link href="/123">
+              <button className="h:auto flex-grow-0 px-8 py-3 ml-0 m-2 mx-4 text-lpGreen-links transition-colors font-default text-sm bg-white border-2 border-white focus:outline-none duration-150 hover:bg-lpGreen-main hover:text-white">
+                <a className={''}>FIND OUT MORE</a>
+              </button>
+            </Link>
+            <Link href="/123">
+              <button className="h:auto flex-grow-0 px-8 py-3 m-2 mx-4 text-lpGreen-links transition-colors font-default text-sm bg-white border-2 border-white focus:outline-none duration-150 hover:bg-lpGreen-main hover:text-white">
+                <a className={''}>FIND OUT MORE</a>
+              </button>
+            </Link>
+          </div>
+          <div className={"flex h-36 w-full"}></div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </div>
     </div>
   )
 }
