@@ -14,6 +14,9 @@ module.exports = {
           main: "#00b388",
           links: "#43cb83",
           linksHover:"#FC8A17"
+        },
+        lpBlack:{
+          main:"#303030"
         }
       },
       fontFamily: {

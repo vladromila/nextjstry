@@ -2,6 +2,12 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
+import * as Scroll from 'react-scroll';
+
+// Or Access Link,Element,etc as follows
+let LinkScroll = Scroll.Link;
+
+
 export default function Home() {
   const [active, setActive] = useState(false);
 
@@ -46,9 +52,8 @@ export default function Home() {
         </button>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          className={`${active ? '' : 'hidden'
+            }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
@@ -85,18 +90,36 @@ export default function Home() {
           <div className={"flex flex-col xsm:items-center xsm:flex-row xsm:justify-start content-start items-start"}>
             <Link href="/123">
               <button className="h:auto flex-grow-0 px-8 py-3 ml-0 m-2 mx-4 text-lpGreen-links transition-colors font-default text-sm bg-white border-2 border-white focus:outline-none duration-150 hover:bg-lpGreen-main hover:text-white">
-              FIND OUT MORE
+                FIND OUT MORE
               </button>
             </Link>
             <Link href="/123">
               <button className="h:auto flex-grow-0 px-8 py-3 ml-0 m-2 xsm:mx-4 text-white transition-colors font-default text-sm bg-lpGreen-links border-2 border-lpGreen-links focus:outline-none duration-150 hover:bg-lpGreen-linksHover hover:border-lpGreen-linksHover hover:text-black">
-              CONTACT US
+                CONTACT US
               </button>
             </Link>
           </div>
           <div className={"flex h-36 w-full"}></div>
-          <div className={"flex w-full justify-center align-center"}><img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png"/></div>
+          <div className={"flex w-full justify-center align-center"}>
+            <LinkScroll to="discoverOurCompany" smooth={true} offset={-100}>
+            <img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png" />
+          </LinkScroll></div>
           <div className={"flex h-10 w-full"}></div>
+        </div>
+      </div>
+      <div className={"flex w-full bg-white"} id="discoverOurCompany">
+        <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
+          <div className={"flex h-40 w-full"}></div>
+          <h1 style={{ fontSize: '40px' }} className="font-default text-lpBlack-main leading-tight text-center">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
+          <div className={"flex h-16 w-full"}></div>
+          <p className="w-3/5 font-pDefault text-lpBlack-main text-xl self-center text-center">Join forces with a great team of marketing automation experts that easily embeds in your existing marketing team, augmenting the strategic and technical expertise so critical in today’s online world.</p>
+          <div className={"flex h-16 w-full"}></div>
+          <Link href="/123">
+            <button className="h:auto flex-grow-0 px-8 py-3 ml-0 m-2 mx-4 bg-lpGreen-main text-white transition-colors font-default text-sm border-2 border-lpGreen-main self-center focus:outline-none duration-150 hover:bg-white hover:text-lpGreen-main">
+              DISCOVER OUR COMPANY
+              </button>
+          </Link>
+          <div className={"flex h-20 w-full"}></div>
         </div>
       </div>
     </div>
