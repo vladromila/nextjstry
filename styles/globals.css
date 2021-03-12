@@ -28,3 +28,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#scroll-down-arrow {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#scroll-down-arrow:hover {
+  top: 10px;
+}
