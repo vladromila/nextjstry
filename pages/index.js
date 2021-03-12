@@ -81,11 +81,11 @@ export default function Home() {
       </nav>
       <div className={"flex w-full bg-homepage-hero bg-cover bg-no-repeat bg-bottom"}>
         <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
-          <div className={"flex h-36 w-full"}></div>
-          <h1 className="text-6xl font-default text-white leading-tight">Marketing Automation</h1>
-          <h1 className="text-6xl font-default text-white leading-tight">Solutions</h1>
+          <div className={"flex h-20 lg:h-36 w-full"}></div>
+          <h1 className="text-4xl lg:text-6xl font-default text-white leading-tight">Marketing Automation</h1>
+          <h1 className="text-4xl lg:text-6xl font-default text-white leading-tight">Solutions</h1>
           <div className={"flex h-14 w-full"}></div>
-          <p className="w-1/2 font-pDefault text-white text-xl">Leveraging our hands-on technical expertise, deep automation skills and engineering mindset, we assist the best B2B brands in the world on their journey to enhanced digitalization.</p>
+          <p className="lg:w-1/2 font-pDefault text-white text-xl">Leveraging our hands-on technical expertise, deep automation skills and engineering mindset, we assist the best B2B brands in the world on their journey to enhanced digitalization.</p>
           <div className={"flex h-10 w-full"}></div>
           <div className={"flex flex-col xsm:items-center xsm:flex-row xsm:justify-start content-start items-start"}>
             <Link href="/123">
@@ -99,7 +99,7 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          <div className={"flex h-36 w-full"}></div>
+          <div className={"flex h-20 lg:h-36 w-full"}></div>
           <div className={"flex w-full justify-center align-center"}>
             <LinkScroll to="discoverOurCompany" smooth={true} offset={-100}>
             <img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png" />
@@ -109,13 +109,13 @@ export default function Home() {
       </div>
       <div className={"flex w-full bg-white"} id="discoverOurCompany">
         <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
-          <div className={"flex h-40 w-full"}></div>
+          <div className={"flex h-20 lg:h-40 w-full"}></div>
           <h1 style={{ fontSize: '40px' }} className="font-default text-lpBlack-main leading-tight text-center">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
           <div className={"flex h-16 w-full"}></div>
-          <p className="w-3/5 font-pDefault text-lpBlack-main text-xl self-center text-center">Join forces with a great team of marketing automation experts that easily embeds in your existing marketing team, augmenting the strategic and technical expertise so critical in today’s online world.</p>
+          <p className="lg:w-3/5 font-pDefault text-lpBlack-main text-xl self-center text-center">Join forces with a great team of marketing automation experts that easily embeds in your existing marketing team, augmenting the strategic and technical expertise so critical in today’s online world.</p>
           <div className={"flex h-16 w-full"}></div>
           <Link href="/123">
-            <button className="h:auto flex-grow-0 px-8 py-3 ml-0 m-2 mx-4 bg-lpGreen-main text-white transition-colors font-default text-sm border-2 border-lpGreen-main self-center focus:outline-none duration-150 hover:bg-white hover:text-lpGreen-main">
+            <button className="h:auto flex-grow-0 px-8 py-3 bg-lpGreen-main text-white transition-colors font-default text-sm border-2 border-lpGreen-main self-center focus:outline-none duration-150 hover:bg-white hover:text-lpGreen-main">
               DISCOVER OUR COMPANY
               </button>
           </Link>
