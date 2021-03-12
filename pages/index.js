@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/index.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
 import * as Scroll from 'react-scroll';
@@ -102,15 +102,15 @@ export default function Home() {
           <div className={"flex h-20 lg:h-36 w-full"}></div>
           <div className={"flex w-full justify-center align-center"}>
             <LinkScroll to="discoverOurCompany" smooth={true} offset={-100}>
-            <img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png" />
-          </LinkScroll></div>
+              <img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png" />
+            </LinkScroll></div>
           <div className={"flex h-10 w-full"}></div>
         </div>
       </div>
       <div className={"flex w-full bg-white"} id="discoverOurCompany">
         <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
-          <div className={"flex h-20 lg:h-40 w-full"}></div>
-          <h1 style={{ fontSize: '40px' }} className="font-default text-lpBlack-main leading-tight text-center">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
+          <div className={"flex h-40 w-full"}></div>
+          <h1 className="font-default text-lpBlack-main leading-tight text-center text-5xl">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
           <div className={"flex h-16 w-full"}></div>
           <p className="lg:w-3/5 font-pDefault text-lpBlack-main text-xl self-center text-center">Join forces with a great team of marketing automation experts that easily embeds in your existing marketing team, augmenting the strategic and technical expertise so critical in today’s online world.</p>
           <div className={"flex h-16 w-full"}></div>
@@ -119,7 +119,99 @@ export default function Home() {
               DISCOVER OUR COMPANY
               </button>
           </Link>
-          <div className={"flex h-20 w-full"}></div>
+          <div className={"flex h-40 w-full"}></div>
+        </div>
+      </div>
+      <div className={"flex w-full bg-white"} id="discoverOurCompany">
+        <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-12 xl:px-20 2xl:px-28"}>
+          <div className={"flex flex-row flex-wrap"}>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pr-16"}>
+              <h1 className="font-default text-lpBlack-main leading-tight text-4xl">What we <span class="text-lpGreen-main">do</span></h1>
+              <div className={"flex h-10 w-full"}></div>
+              <p className="font-pDefault text-lpBlack-main text-lg">With a keen focus on discovering new paths for complex marketing automation challenges, and on leveraging data engineering best practices, we guide enterprise leaders towards a path of great digital progress.</p>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pl-16 xl:p-0 xl:px-8 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon1.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua<br /><span className="wwd-toChange">Consulting</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pr-16 xl:p-0 xl:pl-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon2.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua<br /><span className="wwd-toChange">Implementation</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pl-16 xl:p-0 xl:pr-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon3.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua <span className="wwd-toChange">Platform</span><br />Implementation</h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pr-16 xl:p-0 xl:px-8 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon4.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua <span className="wwd-toChange">Campaign</span><br />Production</h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pl-16 xl:p-0 xl:pl-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon5.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua<br /><span className="wwd-toChange">Enhancements</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pr-16 xl:p-0 xl:pr-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon6.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua Reporting<br />and <span className="wwd-toChange">Analytics</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pl-16 xl:p-0 xl:px-8 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon7.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Eloqua<br /><span className="wwd-toChange">Training</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pr-16 xl:p-0 xl:pl-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon8.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Pardot <span className="wwd-toChange">Technology</span><br />Services</h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pl-16 xl:p-0 xl:pr-16 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon9.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">HubSpot Marketing<br /><span className="wwd-toChange">Automation Services</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+            <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0  md:pr-16 xl:p-0 xl:px-8 wwd"}>
+              <img width={96} height={96} src="/assets/images/icon10.svg" />
+              <div className={"flex h-8 w-full"}></div>
+              <h1 className="font-default text-lpBlack-main leading-tight text-3xl">Marketo<br /><span className="wwd-toChange">Software Services</span></h1>
+              <div className={"flex h-8 w-full"}></div>
+              <a href="/" className={"text-sm text-lpBlack-main font-default hover:text-lpGreen-main"}>» LEARN MORE</a>
+              <div className={"flex h-20 w-full"}></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -20,6 +20,13 @@ body {
   width: 100%;
 }
 
+.wwd-toChange{
+  transition: color ease 0.5s;
+}
+.wwd:hover h1>.wwd-toChange{
+  color:#FC8A17 !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
