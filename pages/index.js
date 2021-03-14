@@ -119,7 +119,7 @@ export default function Home() {
               DISCOVER OUR COMPANY
               </button>
           </Link>
-          <div className={"flex h-40 w-full"}></div>
+          <div className={"flex h-20 lg:h-40 w-full"}></div>
         </div>
       </div>
       <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-20 xl:px-20 2xl:px-28"}>
@@ -254,6 +254,42 @@ export default function Home() {
               </button>
         </Link>
         <div className={"flex h-40 w-full"}></div>
+      </div>
+      <div style={{backgroundColor:"#373a36"}} className={"flex"}>
+      <div style={{backgroundColor:"#373a36"}} className={"container flex mx-auto px-6 flex-col md:px-20 lg:px-20 xl:px-20 2xl:px-28 bg-gray-500"}>
+        <div className={"flex h-28 lg:h-48 w-full"}></div>
+        <h1 className="font-default text-white leading-tight text-center text-3xl sm:text-4xl lg:text-5xl">Meet our <span class="text-lpGreen-main">Customers</span></h1>
+        <div className={"flex h-16 w-full"}></div>
+        <p className="lg:w-3/5 font-pDefault text-white text-xl self-center text-center px-4">Playing in the field of true enterprise innovators, we are on a mission to help brands globally connect with their customers through marketing technologies, and to guide marketers further towards brand new frontiers of operational, marketing automation efficiency.</p>
+        <div className={"flex h-16 w-full"}></div>
+        <div className={"flex flex-row flex-wrap"}>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/HPE-01.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/HP-01.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/Intel-01.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/Mphasis-01.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/TFS-01-2.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+          <div className={"flex w-1/3 px-4 justify-center items-center flex-col"}>
+            <img src="/assets/images/RBI-whitened-01.svg" className={"w-full sm:w-full lg:w-1/2 h-auto"} />
+            <div className={"flex h-20 w-full"}></div>
+          </div>
+        </div>
+        <div className={"flex h-28 lg:h-40 w-full"}></div>
+      </div>
       </div>
     </div>
   )
