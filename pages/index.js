@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </nav>
       <div className={"flex w-full bg-homepage-hero bg-cover bg-no-repeat bg-bottom"}>
-        <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
+        <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-20 xl:px-20 2xl:px-28"}>
           <div className={"flex h-20 lg:h-36 w-full"}></div>
           <h1 className="text-4xl lg:text-6xl font-default text-white leading-tight">Marketing Automation</h1>
           <h1 className="text-4xl lg:text-6xl font-default text-white leading-tight">Solutions</h1>
@@ -99,7 +99,7 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          <div className={"flex h-20 lg:h-36 w-full"}></div>
+          <div className={"flex h-10 sm:h-20 lg:h-36 w-full"}></div>
           <div className={"flex w-full justify-center align-center"}>
             <LinkScroll to="discoverOurCompany" smooth={true} offset={-100}>
               <img id="scroll-down-arrow" src="/assets/images/scroll-down-arrow.png" />
@@ -108,9 +108,9 @@ export default function Home() {
         </div>
       </div>
       <div className={"flex w-full bg-white"} id="discoverOurCompany">
-        <div className={"container flex mx-auto px-12 flex-col md:px-12 lg:px-12 xl:px-20 2xl:px-28"}>
-          <div className={"flex h-40 w-full"}></div>
-          <h1 className="font-default text-lpBlack-main leading-tight text-center text-5xl">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
+        <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-20 xl:px-20 2xl:px-28"}>
+          <div className={"flex h-20 lg:h-40 w-full"}></div>
+          <h1 className="font-default text-lpBlack-main leading-tight text-center text-4xl lg:text-5xl">Raise your company’s digital <span class="text-lpGreen-main">intelligence</span>. Mobilize MarTech <span class="text-lpGreen-main">solutions</span> towards the greatest business impact.</h1>
           <div className={"flex h-16 w-full"}></div>
           <p className="lg:w-3/5 font-pDefault text-lpBlack-main text-xl self-center text-center">Join forces with a great team of marketing automation experts that easily embeds in your existing marketing team, augmenting the strategic and technical expertise so critical in today’s online world.</p>
           <div className={"flex h-16 w-full"}></div>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </div>
       <div className={"flex w-full bg-white"} id="discoverOurCompany">
-        <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-12 xl:px-20 2xl:px-28"}>
+        <div className={"container flex mx-auto px-12 flex-col md:px-20 lg:px-20 xl:px-20 2xl:px-28"}>
           <div className={"flex flex-row flex-wrap"}>
             <div className={"flex w-full md:w-1/2 xl:w-1/3 flex-col p-0 md:pr-16"}>
               <h1 className="font-default text-lpBlack-main leading-tight text-4xl">What we <span class="text-lpGreen-main">do</span></h1>
