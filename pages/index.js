@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import styles from '../../styles/index.module.css'
-import Link from 'next/link'
-import Script from 'next/script'
 import { useState } from 'react';
 // import * as Scroll from 'react-scroll';
 // import HubspotForm from "react-hubspot-form"
@@ -71,9 +68,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5737142.js" />
+      <Head>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5737142.js" />
+      </Head>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.a
         </p>
